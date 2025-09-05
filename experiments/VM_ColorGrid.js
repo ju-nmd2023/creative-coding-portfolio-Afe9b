@@ -1,45 +1,9 @@
-/*function setup() {
-  createCanvas(innerWidth, innerHeight);
-  background(34, 39, 46);
-}
-
-function draw() {
-  background(34, 39, 46, 40);
-  noStroke();
-  fill(108, 182, 255);
-
-  push();
-  translate(width / 2, height / 2);
-
-  push();
-  rotate(frameCount / 8);
-  ellipse(25, 0, 50);
-  pop();
-
-  push();
-  rotate(-frameCount / 10);
-  ellipse(75, 0, 50);
-  pop();
-
-  push();
-  rotate(frameCount / 12);
-  ellipse(125, 0, 50);
-  pop();
-
-  push();
-  rotate(-frameCount / 14);
-  ellipse(175, 0, 50);
-  pop();
-
-  pop();
-}*/
-
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(1000, 1000);
 }
 
 const size = 100;
-const layers = 10;
+const layers = 8;
 
 function getRandomValue(pos, variance) {
   return pos + map(Math.random(), 0, 1, -variance, variance);
@@ -49,15 +13,17 @@ function drawLayers(x, y, size, layers) {
   //const half = size / 2;
   const variance = size / 20;
   noFill();
-  //strokeWeight(5);
+
+  stroke(random(255), random(255), random(255));
+  strokeWeight(1);
+
   //rectMode(CENTER);
   for (let i = 0; i < layers; i++) {
-    if (Math.random() > 0.5) {
+    if (Math.random() > 0.8) {
       continue;
     }
     const s = (size / layers) * i;
     const half = s / 2;
-    strokeWeight(random(5, 20));
     beginShape();
     vertex(
       getRandomValue(x - half, variance),
@@ -75,6 +41,7 @@ function drawLayers(x, y, size, layers) {
       getRandomValue(x - half, variance),
       getRandomValue(y + half, variance)
     );
+
     endShape(CLOSE);
     rect(x - half, y - half, s, s);
   }
@@ -83,8 +50,12 @@ function drawLayers(x, y, size, layers) {
 function draw() {
   background(255, 255, 255);
 
-  const bigSize = min(width, height);
-  drawLayers(width / 2, height / 2, bigSize, layers);
+  //drawLayers(100, 100, size, layers);
+  for (let y = 0; y < 10; y++) {
+    for (let x = 0; x < 10; x++) {
+      drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);
+    }
+  }
 
   noLoop();
 }

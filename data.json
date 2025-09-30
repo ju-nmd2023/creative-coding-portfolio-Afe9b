@@ -22,33 +22,33 @@
   {
     "file": "experiments/W1_GN_var1.js",
     "name": "First variation of Georg Nees",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "First variation of Georg Nees, Schotter, 1968, with Monochrome colors"
   },
   {
     "file": "experiments/W1_GN_var2.js",
     "name": "Second variation of Gerog Nees",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "First variation of Georg Nees, Schotter, 1968 with random colors on random squares"
   },
   {
     "file": "experiments/W2_Kscope.js",
     "name": "Kaleidoscope Experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "Kaleidoscope with color change effect with mouse click interaction"
   },
   {
     "file": "experiments/W2_Flowfield.js",
     "name": "Overlayer Flowfield Experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "Flowfield with overlayer effect with mouse click interaction, This creates new a unique pattern of flowfiled every time you click"
   },
   {
     "file": "experiments/W4_Tone.js",
     "name": "Tone Movement Experiment",
-    "description": "Click to make it move with a sound with Tone.js",
+    "description": "Click to make the visual to move with a sound with Tone.js, click higher to make it pitch sound higher, and lower for lower pitch",
     "usesAudio": true
   },
   {
     "file": "experiments/W4_Tone2.js",
     "name": "Tone Melody Movement Experiment",
-    "description": "Click to make it move with a melody-sound with Tone.js",
+    "description": "Click to make the visual to move with a unique melody-sound for each click with Tone.js",
     "usesAudio": true
   }
 ]

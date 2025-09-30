@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(windowWidth, windowHeight); // canvas fyller hela fönstret
   strokeWeight(2);
   rectMode(CENTER);
   noLoop();
@@ -15,9 +15,12 @@ function drawSquare(w, h) {
 }
 
 function draw() {
-  background(0, 0, 11);
+  background(0, 0, 11); // svart bakgrund
 
   const size = min(width, height);
+
+  push();
+  translate(width / 2 - size / 2, height / 2 - size / 2); // centrera rutmönstret
 
   //Cite ChatGPT https://chatgpt.com/share/68c30a52-2b6c-8007-9b02-59ab28fe2b8a
   for (let xPos = squareSize; xPos <= size - squareSize; xPos += squareSize) {
@@ -48,4 +51,12 @@ function draw() {
       pop();
     }
   }
+
+  pop();
+}
+
+// Gör så canvas uppdateras när fönstret ändras
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  redraw();
 }

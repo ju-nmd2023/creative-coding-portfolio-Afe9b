@@ -1,32 +1,54 @@
 [
   {
-    "file": "experiments/W1_Mona_Recreate.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/W1_Vera_Recreate.js",
+    "name": "Recreations of Vera Molnar",
+    "description": "Recreation of Vera Molnar, (Des)Ordres, 1974"
   },
   {
-    "file": "experiments/W1_Mona_Var2.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/W1_Vera_Var2.js",
+    "name": "First variation of Vera Molnar",
+    "description": "Variation of Vera Molnar, (Des)Ordres, 1974 But with only one thick square"
   },
   {
-    "file": "experiments/W1_Mona_Var1.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/W1_Vera_Var1.js",
+    "name": "Second variation of Vera Molnar",
+    "description": "Variation of Vera Molnar, (Des)Ordres, 1974 But with random colors on the squares"
   },
   {
     "file": "experiments/W1_GN_Recreate.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Recreations of Georg Nees",
+    "description": "Recreation of Georg Nees, Schotter, 1968"
   },
   {
     "file": "experiments/W1_GN_var1.js",
-    "name": "Name of your experiment",
+    "name": "First variation of Georg Nees",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
   {
     "file": "experiments/W1_GN_var2.js",
-    "name": "Name of your experiment",
+    "name": "Second variation of Gerog Nees",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/W2_Kscope.js",
+    "name": "Kaleidoscope Experiment",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/W2_Flowfield.js",
+    "name": "Overlayer Flowfield Experiment",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/W4_Tone.js",
+    "name": "Tone Movement Experiment",
+    "description": "Click to make it move with a sound with Tone.js",
+    "usesAudio": true
+  },
+  {
+    "file": "experiments/W4_Tone2.js",
+    "name": "Tone Melody Movement Experiment",
+    "description": "Click to make it move with a melody-sound with Tone.js",
+    "usesAudio": true
   }
 ]

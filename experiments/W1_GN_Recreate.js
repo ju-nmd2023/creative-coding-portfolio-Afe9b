@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(windowWidth, windowHeight); // canvas fyller hela fönstret
   strokeWeight(2);
   noFill();
   rectMode(CENTER);
@@ -16,9 +16,12 @@ function drawSquare(w, h) {
 }
 
 function draw() {
-  background(255, 130, 11);
+  background(255, 255, 255); // täcker alltid hela canvas
 
   const size = min(width, height);
+
+  push();
+  translate(width / 2 - size / 2, height / 2 - size / 2); // centrera bilden
 
   for (let xPos = squareSize; xPos <= size - squareSize; xPos += squareSize) {
     for (let yPos = squareSize; yPos <= size - squareSize; yPos += squareSize) {
@@ -31,10 +34,18 @@ function draw() {
         random(-randomDisplacement, randomDisplacement) * rowFactor;
 
       push();
-      translate(xPos + translateAmt + offset, yPos + translateAmt + offset); //Cite
+      translate(xPos + translateAmt + offset, yPos + translateAmt + offset);
       rotate(rotateAmt);
       drawSquare(squareSize, squareSize);
       pop();
     }
   }
+
+  pop();
+}
+
+//
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  redraw();
 }

@@ -3,10 +3,10 @@
 let imgBackground;
 let segments = 12;
 let angleStep;
-let rotationSpeedBackground = 0.9;
+let rotationSpeedBackground = 0.4;
 let time = 0;
-let radius = 30;
-let textureRotationSpeed = 0.9;
+let radius = 10;
+let textureRotationSpeed = 0.4;
 let maxrotationAngle = 90;
 
 let currentAngleBackground = 0;
@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600, WEBGL);
+  createCanvas(innerWidth, innerHeight, WEBGL);
   angleMode(DEGREES);
   angleStep = 360 / segments;
   noStroke();
@@ -73,20 +73,20 @@ function drawSegment(i, offsetX, offsetY, textureRotation) {
   vertex(
     0,
     0,
-    imgBackground.width / 2 + offsetX,
+    imgBackground.width / 4 + offsetX,
     imgBackground.height / 2 + offsetY
   );
 
   vertex(
-    (width / 2) * cos(-angleStep / 2),
-    (height / 2) * sin(-angleStep / 2),
+    (width / 4) * cos(-angleStep / 2),
+    (height / 4) * sin(-angleStep / 2),
     cos(textureRotation) * imgBackground.width,
     0
   );
 
   vertex(
-    (width / 5) * cos(angleStep / 2),
-    (height / 5) * sin(angleStep / 2),
+    (width / 10) * cos(angleStep / 2),
+    (height / 10) * sin(angleStep / 2),
     imgBackground.width,
     imgBackground.height * cos(textureRotation)
   );
